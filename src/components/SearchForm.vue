@@ -1,9 +1,3 @@
-<template>
-	<div>
-		<input type="text" v-model="input" placeholder="vue js">
-	</div>
-</template>
-
 <script>
 export default {
 	data: function () {
@@ -28,6 +22,12 @@ export default {
 	}
 }
 </script>
+
+<template>
+	<div>
+		<input type="text" v-model="input" placeholder="vue js">
+	</div>
+</template>
 
 <style scoped>
 input {

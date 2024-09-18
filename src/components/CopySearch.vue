@@ -1,7 +1,3 @@
-<template>
-	<button v-if="text.length" @click="copy">{{ message }}</button>
-</template>
-
 <script>
 export default {
 	props: ['text'],
@@ -22,3 +18,9 @@ export default {
 
 }
 </script>
+
+<template>
+	<button v-if="text.length" @click="copy">{{ message }}</button>
+</template>
+
+
