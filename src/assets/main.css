@@ -1,0 +1,71 @@
+@import "./base.css";
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flex;
+  }
+}
+
+
+button {
+  padding: 0px 8px;
+  height: 28px;
+  gap: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  user-select: none;
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: 32px;
+  min-width: max-content;
+  color: var(--button-default-fgColor-rest, var(--color-btn-text, #c9d1d9));
+  background-color: var(--button-default-bgColor-rest, var(--color-btn-bg, #21262d));
+  box-shadow: var(--button-default-shadow-resting, var(--color-btn-shadow, 0 0 transparent)), var(--button-default-shadow-inset, var(--color-btn-inset-shadow, 0 0 transparent));
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: var(--button-default-borderColor-rest, var(--button-default-borderColor-rest, var(--color-btn-border, rgba(240, 246, 252, 0.1))));
+  text-decoration: none;
+  padding: 0px 12px;
+  gap: 8px;
+  transition: all 80ms cubic-bezier(0.65, 0, 0.35, 1), fill, background-color, border-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
